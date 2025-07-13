@@ -1,6 +1,8 @@
 # Vít Kučera
 
-Experimental high-energy physicist and enthusiastic coder with an eye for detail
+High-energy physicist and enthusiastic coder with an eye for detail and extensive experience in developing and optimising data analysis frameworks.
+Proficient in Python, C++, and various data management tools on Linux platforms.
+Ready to bring analytical skills and technical expertise.
 
 ## Project contributions
 
@@ -27,12 +29,14 @@ Analysis framework of the [ALICE](https://alice-collaboration.web.cern.ch/) expe
   - [Dependency finder](https://aliceo2group.github.io/analysis-framework/docs/tools/dependencyFinder.html) - Automated identification of missing components of crashing analyses.
   - [Shell rc utilities](https://aliceo2group.github.io/analysis-framework/docs/tools/#shell-rc-utilities) - Helper functions for recompilation and debugging.
 - Code quality enhancement
-  - Systematic fixing of compilation warnings and setup of CMake flags to treat them as errors in CI compilation tests.
+  - Systematically fixed compilation warnings and set CMake flags to treat them as errors in CI compilation tests.
+  - Configured and used cpplint and cppcheck to find and fix bugs.
   - [O2 linter](https://aliceo2group.github.io/analysis-framework/docs/tools/o2linter.html) - Linter to detect framework-specific (and some general C++) issues in the code.
     - Integrated into CI and Visual Studio Code.
   - Cleaned up header dependencies.
-    - Applied of ["Include what you use"](https://include-what-you-use.org/) with clang-tidy.
+    - Applied ["Include what you use"](https://include-what-you-use.org/) with clang-tidy.
     - [Configured](https://github.com/AliceO2Group/O2Physics/pull/11448) and used clang-format to sort and group `#include` directives.
+    - Wrote an awk script to fix include style.
     - Proposed to add header compilation in the CI build tests.
   - [Configured](https://github.com/AliceO2Group/O2Physics/pull/11616) and used clang-tidy to check and fix identifier names according to the project naming conventions.
 - Continuous integration
