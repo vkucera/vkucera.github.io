@@ -1,18 +1,20 @@
 # Vít Kučera
 
-High-energy physicist and enthusiastic coder with an eye for detail and extensive experience in developing and optimising data analysis frameworks.
-Proficient in Python, C++, and various data management tools on Linux platforms.
+High-energy physicist and enthusiastic programmer with an eye for detail and extensive experience in developing and optimising data analysis frameworks.
+Proficient in C++, Python, and various data management tools on Linux platforms.
 Ready to bring analytical skills and technical expertise.
 
-## Project contributions
+## Project contributions (non-exhaustive)
 
 ### [O2Physics](https://github.com/AliceO2Group/O2Physics) and [O2](https://github.com/AliceO2Group/AliceO2)
 
-Analysis framework of the [ALICE](https://alice-collaboration.web.cern.ch/) experiment at [CERN](https://home.cern/)
+Central framework for statistical analysis of trillions of particle collisions recorded by the [ALICE](https://alice-collaboration.web.cern.ch/) experiment at [CERN](https://home.cern/). (570+ users)
+
+Tools: C++, Python, JSON, YAML, GitHub actions, cpplint, cppcheck, clang-tidy, perf, valgrind
 
 - Core of the [heavy-flavour analysis framework](https://github.com/AliceO2Group/O2Physics/tree/master/PWGHF)
-  - Designed, developed and [documented](https://aliceo2group.github.io/analysis-framework/docs/advanced-specifics/pwghf.html) a new framework for reconstruction, identification and analysis of heavy-flavour particles.
-  - Coordinated a team of tens of contributors.
+  - Designed, developed and [documented](https://aliceo2group.github.io/analysis-framework/docs/advanced-specifics/pwghf.html) a new framework for reconstruction, identification and analysis of heavy-flavour particles. (180+ users)
+  - Coordinated a team of 40+ contributors in the early-development and validation stages.
   - Selected contributions:
     - [`HfHelper`](https://github.com/AliceO2Group/O2Physics/blob/master/PWGHF/Core/HfHelper.h) - Helper class for calculations of properties of heavy-flavour decay candidates.
     - [`utilsEvSelHf`](https://github.com/AliceO2Group/O2Physics/blob/master/PWGHF/Utils/utilsEvSelHf.h) - Utilities for event selection.
@@ -59,16 +61,20 @@ Analysis framework of the [ALICE](https://alice-collaboration.web.cern.ch/) expe
 
 ### [Run 3 analysis validation framework](https://github.com/AliceO2Group/Run3AnalysisValidation)
 
-Framework for automated parallelised local execution, testing and validation of any O2Physics analysis code on large local data samples.
+Framework for automated parallelised local execution, testing and validation of any O2Physics analysis code on large local data samples. (73 users)
 
 Developed to faciliate validation of new O2Physics code against the software used in the previous periods of LHC data taking.
+
+Tools: Bash, Python, YAML, C++, JSON
 
 - Author, developer, maintainer.
 - Among several other utilities, it includes a [maintenance script](https://github.com/AliceO2Group/Run3AnalysisValidation?tab=readme-ov-file#keep-your-repositories-and-installations-up-to-date-and-clean) for automated maintenance of Git repositories and builds of development packages.
 
 ### [MachineLearningHEP](https://github.com/alisw/MachineLearningHEP)
 
-Package for high-energy physicists to perform optimisation of rare signals produced in ultra-relativistic proton-proton and heavy-ion collisions.
+Package for high-energy physicists to perform detection optimisation and analysis of rare (heavy-flavour) particles produced in collisions at the LHC. (48 users)
+
+Tools: Python, Pandas, YAML, Bash
 
 - Analysis code
   - [Variation script](https://github.com/alisw/MachineLearningHEP/blob/run3/machine_learning_hep/do_variations.py) to run the analysis with variations of parameters to assess systematic uncertainties of the results.
@@ -77,4 +83,4 @@ Package for high-energy physicists to perform optimisation of rare signals produ
 - Continuous integration
   - Set up [pre-commit hooks](https://github.com/alisw/MachineLearningHEP/blob/run3/.pre-commit-config.yaml) for formatting and linting.
   - Configured dependabot for automated scheduled updates of GitHub actions.
-  - Set up GitHub action workflows for O2 linter and [MegaLinter](https://megalinter.io/).
+  - Set up GitHub action workflows for [MegaLinter](https://megalinter.io/).
