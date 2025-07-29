@@ -1,10 +1,10 @@
 # Vít Kučera
 
-High-energy physicist and enthusiastic coder with an eye for detail and extensive experience in developing and optimising data analysis frameworks.
-Proficient in Python, C++, and various data management tools on Linux platforms.
+High-energy physicist and enthusiastic programmer with an eye for detail and extensive experience in developing and optimising data analysis frameworks.
+Proficient in C++, Python, and various data management tools on Linux platforms.
 Ready to bring analytical skills and technical expertise.
 
-## Project contributions
+## Project contributions (non-exhaustive)
 
 ### [O2Physics](https://github.com/AliceO2Group/O2Physics) and [O2](https://github.com/AliceO2Group/AliceO2)
 
@@ -77,4 +77,4 @@ Package for high-energy physicists to perform optimisation of rare signals produ
 - Continuous integration
   - Set up [pre-commit hooks](https://github.com/alisw/MachineLearningHEP/blob/run3/.pre-commit-config.yaml) for formatting and linting.
   - Configured dependabot for automated scheduled updates of GitHub actions.
-  - Set up GitHub action workflows for O2 linter and [MegaLinter](https://megalinter.io/).
+  - Set up GitHub action workflows for [MegaLinter](https://megalinter.io/).
