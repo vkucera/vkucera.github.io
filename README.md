@@ -10,7 +10,7 @@ Ready to bring analytical skills and technical expertise.
 
 Central framework for statistical analysis of trillions of particle collisions recorded by the [ALICE](https://alice-collaboration.web.cern.ch/) experiment at [CERN](https://home.cern/). (570+ users)
 
-Tools: C++, Python, JSON, YAML, GitHub actions, cpplint, cppcheck, clang-tidy, perf, valgrind
+Tools: C++, Python, JSON, YAML, GitHub actions, cpplint, Cppcheck, Clang-Tidy, perf, Valgrind
 
 - Core of the [heavy-flavour analysis framework](https://github.com/AliceO2Group/O2Physics/tree/master/PWGHF)
   - Designed, developed and [documented](https://aliceo2group.github.io/analysis-framework/docs/advanced-specifics/pwghf.html) a new framework for reconstruction, identification and analysis of heavy-flavour particles. (180+ users)
@@ -32,16 +32,16 @@ Tools: C++, Python, JSON, YAML, GitHub actions, cpplint, cppcheck, clang-tidy, p
   - [Shell rc utilities](https://aliceo2group.github.io/analysis-framework/docs/tools/#shell-rc-utilities) - Helper functions for recompilation and debugging.
 - Code quality enhancement
   - Systematically fixed compilation warnings and extended the build configuration to set CMake flags to treat warnings as errors in CI compilation tests.
-  - Configured and used cpplint and cppcheck to find and fix bugs.
+  - Configured and used cpplint and Cppcheck to find and fix bugs.
   - [O2 linter](https://aliceo2group.github.io/analysis-framework/docs/tools/o2linter.html) - Linter to detect framework-specific (and some general C++) issues in the code.
     - Integrated into CI and Visual Studio Code.
   - Cleaned up header dependencies.
-    - Applied ["Include what you use"](https://include-what-you-use.org/) with clang-tidy.
+    - Applied ["Include what you use"](https://include-what-you-use.org/) with Clang-Tidy.
     - [Configured](https://github.com/AliceO2Group/O2Physics/pull/11448) and used clang-format to sort and group `#include` directives.
     - Wrote an awk script to fix include style.
     - Proposed to add header compilation in the CI build tests.
-  - [Configured](https://github.com/AliceO2Group/O2Physics/pull/11616) and used clang-tidy to check and fix identifier names according to the project naming conventions.
-  - Automated codebase analysis and generation of structured reports for issues found by GCC, clang-tidy, cppcheck, cpplint, O2 linter.
+  - [Configured](https://github.com/AliceO2Group/O2Physics/pull/11616) and used Clang-Tidy to check and fix identifier names according to the project naming conventions.
+  - Automated codebase analysis and generation of structured reports for issues found by GCC, Clang-Tidy, Cppcheck, cpplint, O2 linter.
 - Continuous integration
   - Set up GitHub action workflows for O2 linter and [MegaLinter](https://megalinter.io/).
   - [PR title prefix checker](https://github.com/AliceO2Group/O2Physics/blob/master/.github/workflows/labeler.yml) - GitHub action to create or check a PR title prefix based on the PR labels.
@@ -109,7 +109,7 @@ Open-source todo manager to keep track of personal tasks and todo lists
 
 - [Converted codebase to Python3 and revived the development.](https://sourceforge.net/p/taskcoach/support-requests/560/) ([new repository](https://github.com/taskcoach/taskcoach))
 
-#### [cppcheck](https://cppcheck.sourceforge.io/)
+#### [Cppcheck](https://cppcheck.sourceforge.io/)
 
 Static analysis tool for C/C++ code that detects bugs and focuses on detecting undefined behaviour and dangerous coding constructs.
 
