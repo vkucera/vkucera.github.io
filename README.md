@@ -6,6 +6,14 @@ Ready to bring analytical skills and technical expertise.
 
 ## Project contributions (non-exhaustive)
 
+### Build infrastructure of the ALICE experiment
+
+Tools: Nomad, Jenkins, Grafana, Docker, RECC, Bash, Python, YAML
+
+#### Continuous integration and deployment (CI/CD)
+
+- Deployed and configured compilation cache using RECC in Linux Docker containers on Nomad nodes to speed up CI checks testing PRs.
+
 ### [O2Physics](https://github.com/AliceO2Group/O2Physics) and [O2](https://github.com/AliceO2Group/AliceO2)
 
 Central framework for statistical analysis of trillions of particle collisions recorded by the [ALICE](https://alice-collaboration.web.cern.ch/) experiment at [CERN](https://home.cern/). (570+ users)
@@ -38,7 +46,7 @@ Tools: C++, Python, JSON, YAML, GitHub actions, cpplint, Cppcheck, Clang-Tidy, p
   - Cleaned up header dependencies.
     - Applied ["Include what you use"](https://include-what-you-use.org/) with Clang-Tidy.
     - [Configured](https://github.com/AliceO2Group/O2Physics/pull/11448) and used clang-format to sort and group `#include` directives.
-    - Wrote an awk script to fix include style.
+    - [Developed](https://github.com/AliceO2Group/O2Physics/pull/12033) and [automated](https://github.com/alisw/ali-bot/pull/1689) fixing of header include style.
     - Proposed to add header compilation in the CI build tests.
   - [Configured](https://github.com/AliceO2Group/O2Physics/pull/11616) and used Clang-Tidy to check and fix identifier names according to the project naming conventions.
   - Automated codebase analysis and generation of structured reports for issues found by GCC, Clang-Tidy, Cppcheck, cpplint, O2 linter.
@@ -113,4 +121,6 @@ Open-source todo manager to keep track of personal tasks and todo lists
 
 Static analysis tool for C/C++ code that detects bugs and focuses on detecting undefined behaviour and dangerous coding constructs.
 
-- Reported false positives.
+- Reported false positives and false negatives.
+- Fixed a bug in the error report.
+- Improved user manuals.
